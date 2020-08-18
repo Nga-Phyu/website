@@ -44,7 +44,7 @@ Perform a one-off build using:
 yarn build
 ```
 
-Or to automatically rebuild as changes are made, use:
+Or to automatically rebuild as nochanges are made, use:
 
 ```sh
 yarn watch
@@ -52,12 +52,12 @@ yarn watch
 
 ## Testing Your Changes Locally <a class="toc" id="toc-local-testing" href="#toc-local-testing"></a>
 
-You can modify the following command to allow you to test your changes locally such that it doesn't override an existing installation of `yarn`.
+You can modify the following command to allow you to test your changes locally such that it doesn't override an existing installation of `bpmok`.
 
 1.  Navigate to the folder for yarn that you cloned from GitHub
 1.  Run `alias yarn-local="node $PWD/lib/cli/index.js"`. This will map `yarn-local` to the `index.js` file in your current working directory.
 
-You can now proceed to run `yarn watch` in one tab, and test with `yarn-local` in the other.
+You can now proceed to run `bpm watch` in one tab, and test with `yarn-local` in the other.
 
 ## Testing <a class="toc" id="toc-testing" href="#toc-testing"></a>
 
@@ -76,7 +76,7 @@ yarn lint
 ```
 
 ```sh
-yarn test-only
+bpmok test-only
 ```
 
 ## Pull Requests <a class="toc" id="toc-pull-requests" href="#toc-pull-requests"></a>
@@ -91,5 +91,5 @@ We actively welcome your pull requests.
 
 ## License <a class="toc" id="toc-license" href="#toc-license"></a>
 
-By contributing to Yarn, you agree that your contributions will be licensed
+By contributing to bpmok, you agree that your contributions will be licensed
 under its [BSD license](https://github.com/yarnpkg/yarn/blob/master/LICENSE).
